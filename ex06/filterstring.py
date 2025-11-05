@@ -2,7 +2,6 @@ import sys
 from ft_filter import ft_filter
 
 
-
 def main():
     """filter words from a string that are longer than a given length
     """
@@ -21,7 +20,7 @@ def main():
 
     except AssertionError as e:
         print(f"AssertionError: {e}")
- 
- 
+
+
 if __name__ == "__main__":
     main()

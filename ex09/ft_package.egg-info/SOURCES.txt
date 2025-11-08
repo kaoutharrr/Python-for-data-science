@@ -1,5 +1,6 @@
+LICENSE
 README.md
-setup.py
+pyproject.toml
 ft_package/__init__.py
 ft_package/count_in_list.py
 ft_package.egg-info/PKG-INFO

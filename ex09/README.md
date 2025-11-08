@@ -1,3 +1,2 @@
-ft_package
-
-A test package for counting occurrences in a list.
+# ft_package
+A simple educational Python package that counts occurrences in a list.

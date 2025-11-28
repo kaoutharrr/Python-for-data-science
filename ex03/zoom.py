@@ -9,7 +9,6 @@ def main():
         img_arr = ft_load("animal.jpeg")
         if img_arr is None:
             return
-        print(img_arr)
         zoomed = img_arr[100:500, 450:850, 0]
         print(f"New shape after slicing: {zoomed.shape}")
         print(zoomed)

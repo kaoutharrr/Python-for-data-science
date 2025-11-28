@@ -20,7 +20,9 @@ def ft_red(array) -> np.ndarray:
 
 def ft_green(array) -> np.ndarray:
     """Keeps only green channel."""
-    green = array - (array * [1, 0, 1])
+    green = array.copy()
+    green[:, :, 0] = green[:, :, 0] - green[:, :, 0]
+    green[:, :, 2] = green[:, :, 2] - green[:, :, 2]
     plt.imshow(green)
     plt.show()
     return green

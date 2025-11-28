@@ -13,6 +13,7 @@ def ft_load(path: str) -> np.ndarray:
     try:
         img_arr = mpimg.imread(path)
         print(f"The shape of image is: {img_arr.shape}")
+        print(img_arr)
         return img_arr
     except Exception as e:
         print(f"error : {e} ")

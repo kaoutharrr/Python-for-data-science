@@ -20,7 +20,6 @@ def main():
         img = ft_load("animal.jpeg")
         if img is None:
             return
-        print(img)
         zoomed = img[100:500, 450:850, 0]
         arr = ft_transpose(zoomed)
         print(f"New shape after Transpose: {arr.shape}")

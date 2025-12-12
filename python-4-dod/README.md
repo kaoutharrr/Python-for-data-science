@@ -264,3 +264,15 @@ Clean code isn't just academic - it's what separates a functioning script from m
 - [ ] Explicit imports only
 
 **Good luck, and may your code be clean! 🚀**
+
+
+
+
+
+| Helper     | Meaning             | What it returns            |
+| ---------- | ------------------- | -------------------------- |
+| `mean`     | average             | sum / count                |
+| `median`   | middle value        | center of sorted list      |
+| `quartile` | 25% or 75% position | value at index             |
+| `variance` | spread              | avg of squared differences |
+| `std`      | deviation           | sqrt(variance)             |

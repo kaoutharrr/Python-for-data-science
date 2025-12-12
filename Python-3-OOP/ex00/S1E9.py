@@ -3,15 +3,11 @@ from abc import ABC, abstractmethod
 
 class Character(ABC):
     """abstract base class"""
+    @abstractmethod
     def __init__(self, first_name: str, is_alive: bool = True):
-        """constrctor of character class"""
+        """constructor of character class"""
         self.first_name = first_name
         self.is_alive = is_alive
-
-    @abstractmethod
-    def something(self):
-        """the abstract method"""
-        pass
 
     def die(self):
         """passes is_alive from True to False"""
@@ -19,7 +15,7 @@ class Character(ABC):
 
 
 class Stark(Character):
-    """the concrete class anmed stark"""
-    def something(self):
-        """This overrides the parent Character's 'something' method"""
-        pass
+    """the concrete class named stark"""
+    def __init__(self, first_name, is_alive=True):
+        """initialises a stark family member"""
+        super().__init__(first_name, is_alive)
